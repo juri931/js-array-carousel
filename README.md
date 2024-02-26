@@ -16,5 +16,8 @@ Milestone 2:
 Milestone 3:
 - al click sulle frecce, cambia immagine attiva
 
+extra:
+- timer cambio immagine ogni X secondi
+
 Bonus 1
 - ciclo infinito
