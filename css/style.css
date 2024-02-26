@@ -1,23 +1,48 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body{
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.container{
-  display: flex;
+.slider{
+  position: relative;
   width: 80%;
   height: 60%;
+  margin: 30px auto;
+  overflow: hidden;
 }
 
-.container img{
+.slider img{
   width: 100%;
-  object-fit: cover;
+  height: 80%;
+  display: none;
+  object-fit: contain;
+}
+
+img.displaySlide{
+  display: block;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.slider button{
+  position: absolute;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+  padding: 10px 15px;
+  background-color: rgba(0, 0, 0, .2);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.prev{
+  top: 0;
+  left: 45%;
+  rotate: 90deg;
+}
+
+.next{
+  bottom: 0;
+  left: 45%;
+  rotate: 90deg;
+}
+
+@keyframes fade{
+  from{opacity: .5;}
+  to{opacity: 1;}
 }
