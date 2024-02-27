@@ -35,11 +35,17 @@ img.displaySlide{
   position: absolute;
   font-size: 1.5rem;
   padding: 10px 15px;
-  background-color: rgba(0, 0, 0, .2);
-  color: white;
+  background-color: rgba(160, 160, 160, 0.874);
+  color: black;
   border: none;
   cursor: pointer;
 }
+
+.slider button:hover{
+  background-color: rgba(255, 255, 255, .5);
+  color: red;
+}
+
 
 .prev{
   top: 0;
